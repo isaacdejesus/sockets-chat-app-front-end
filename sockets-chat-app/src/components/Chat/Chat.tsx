@@ -17,7 +17,8 @@ const Chat =( ) => {
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState<any>([]);
     const [users, setUsers] = useState('');
-    const ENDPOINT = 'http://localhost:5000'
+    //const ENDPOINT = 'http://localhost:5000'
+    const ENDPOINT = 'https://chat-app-text.herokuapp.com/'
     useEffect(() => {
         //eslint-disable-next-line no-restricted-globals
         const {name, room} = queryString.parse(location.search);
