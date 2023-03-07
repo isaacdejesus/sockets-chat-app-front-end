@@ -19,7 +19,8 @@ const Chat =( ) => {
     const [messages, setMessages] = useState<any>([]);
     const [users, setUsers] = useState('');
     //const ENDPOINT = 'http://localhost:5000'
-    const ENDPOINT = 'https://chat-app-text.herokuapp.com/'
+    //const ENDPOINT = 'https://chat-app-text.herokuapp.com/'
+    const ENDPOINT = 'https://solitary-sound-4150.fly.dev/'
     useEffect(() => {
         //eslint-disable-next-line no-restricted-globals
         const {name, room} = queryString.parse(location.search);
